@@ -12,7 +12,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, "src"),
     proxy: {
-      "/api": "http://localhost:5001",
+      "/api": "http://localhost:5000",
     },
     historyApiFallback: true,
   },
