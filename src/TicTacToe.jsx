@@ -42,7 +42,7 @@ export default function TicTacToe() {
   const status = calculateStatus(winner, board, nextValue);
 
   function restart() {
-    setBoard([Array(9).fill(null)]);
+    setBoard(Array(9).fill(null));
   }
 
   function selectSquare(squareIndex) {

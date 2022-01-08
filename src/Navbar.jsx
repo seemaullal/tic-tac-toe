@@ -9,16 +9,6 @@ export default function Navbar() {
         <img src={logoPath} height="30" alt="logo" />
         <span>Tic Tac Toe</span>
       </Link>
-
-      <section className="d-flex justify-content-end">
-        <NavLink
-          to="/play"
-          activeClassName="navlink-active"
-          className="nav-link nav-item"
-        >
-          Play
-        </NavLink>
-      </section>
     </nav>
   );
 }
