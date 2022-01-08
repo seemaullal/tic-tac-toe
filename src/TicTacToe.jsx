@@ -8,6 +8,14 @@ function calculateStatus(winner, squares, nextValue) {
     : `Next player: ${nextValue}`;
 }
 
+function Square({ value, onClick }) {
+  return (
+    <button className="square" onClick={onClick}>
+      {value}
+    </button>
+  );
+}
+
 function calculateNextValue(squares) {
   const xSquaresCount = squares.filter((r) => r === "X").length;
   const oSquaresCount = squares.filter((r) => r === "O").length;
@@ -57,26 +65,18 @@ export default function TicTacToe() {
     });
   }
 
-  function renderSquare(i) {
-    return (
-      <button className="square" onClick={() => selectSquare(i)}>
-        {board[i]}
-      </button>
-    );
-  }
-
   return (
     <>
       <div className="board">
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
+        <Square value={board[0]} onClick={() => selectSquare(0)} />
+        <Square value={board[1]} onClick={() => selectSquare(1)} />
+        <Square value={board[2]} onClick={() => selectSquare(2)} />
+        <Square value={board[3]} onClick={() => selectSquare(3)} />
+        <Square value={board[4]} onClick={() => selectSquare(4)} />
+        <Square value={board[5]} onClick={() => selectSquare(5)} />
+        <Square value={board[6]} onClick={() => selectSquare(6)} />
+        <Square value={board[7]} onClick={() => selectSquare(7)} />
+        <Square value={board[8]} onClick={() => selectSquare(8)} />
       </div>
       <div className="game-info">
         <button className="restart" onClick={restart}>
