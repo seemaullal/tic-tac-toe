@@ -1,7 +1,7 @@
 {
-  "name": "google-maps-react-example",
+  "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "Demo application using Google maps, React, and Python",
+  "description": "Tic Tac Toe",
   "main": "index.jsx",
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -33,21 +33,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seemaullal/google-maps-react-example.git"
+    "url": "git+https://github.com/seemaullal/tic-tac-toe.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/seemaullal/google-maps-react-example/issues"
+    "url": "https://github.com/seemaullal/tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/seemaullal/google-maps-react-example#readme",
+  "homepage": "https://github.com/seemaullal/tic-tac-toe#readme",
   "dependencies": {
-    "@react-google-maps/api": "^2.4.1",
     "bootstrap": "^5.0.0",
     "react": "^16.8.0",
     "react-bootstrap": "^1.6.4",
     "react-dom": "^16.8.0",
-    "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.3.0"
   }
 }
