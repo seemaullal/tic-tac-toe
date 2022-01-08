@@ -22,8 +22,8 @@ function calculateNextValue(squares) {
   return oSquaresCount === xSquaresCount ? "X" : "O";
 }
 
-function calculateWinner(squares) {
-  const lines = [
+function calculateWinner(board) {
+  const winningMoves = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -33,10 +33,10 @@ function calculateWinner(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  for (let i = 0; i < lines.length; i++) {
-    const [a, b, c] = lines[i];
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+  for (let i = 0; i < winningMoves.length; i++) {
+    const [index1, index2, index3] = winningMoves[i];
+    if (board[index1] && board[index1] === board[index2] && board[index1] === board[index3]) {
+      return board[index1];
     }
   }
   return null;
